@@ -1,27 +1,27 @@
 public class PizzaMaker {
 
-    private final String dough = "dough";
-    private final String cheese = "cheese";
     private final String meat;
-    private String pizza = "";
+    private Pizza pizza = new Pizza();
 
     public PizzaMaker(String meat) {
         this.meat = meat;
     }
 
-    public String getPizza() {
-        return pizza;
-    }
-
     public void addDough() {
-        pizza += dough + ", ";
+        pizza.setDough("dough");
     }
 
     public void addCheese() {
-        pizza += cheese + ", ";
+        pizza.setCheese("cheese");
     }
 
     public void addMeat() {
-        pizza += meat;
+        pizza.setMeat(meat);
+    }
+
+    public String getPizza() {
+        return pizza.getDough() + ", "
+                + pizza.getCheese() + ", "
+                + pizza.getMeat();
     }
 }
