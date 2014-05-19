@@ -6,12 +6,12 @@ public class CustomerTest {
     @Test
     public void canEatChickenPizza() throws Exception {
         String meat = "chicken";
-        assertEquals("I eat " + meat + ", cheese, dough.", new Customer().eatPizzaWith(meat));
+        assertEquals("I eat " + "dough, cheese, " + meat + ".", new Customer().eatPizzaWith(meat));
     }
 
     @Test
     public void canEatBaconPizza() throws Exception {
         String meat = "bacon";
-        assertEquals("I eat " + meat + ", cheese, dough.", new Customer().eatPizzaWith(meat));
+        assertEquals("I eat " + "dough, cheese, " + meat + ".", new Customer().eatPizzaWith(meat));
     }
 }
