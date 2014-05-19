@@ -1,3 +1,4 @@
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -5,13 +6,11 @@ import static org.junit.Assert.assertEquals;
 public class CustomerTest {
     @Test
     public void canEatChickenPizza() throws Exception {
-        String meat = "chicken";
-        assertEquals("I eat " + "dough, cheese, " + meat + ".", new Customer().eatPizzaWith(meat));
+        assertEquals("I eat dough, cheese, chicken.", new Customer().eatChickenPizza());
     }
 
     @Test
     public void canEatBaconPizza() throws Exception {
-        String meat = "bacon";
-        assertEquals("I eat " + "dough, cheese, " + meat + ".", new Customer().eatPizzaWith(meat));
+        assertEquals("I eat dough, cheese, bacon.", new Customer().eatBaconPizza());
     }
 }

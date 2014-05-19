@@ -1,24 +1,23 @@
-public class PizzaMaker {
+public class BaconPizzaBuilder implements PizzaBuilder{
 
-    private final String meat;
     private Pizza pizza = new Pizza();
 
-    public PizzaMaker(String meat) {
-        this.meat = meat;
-    }
-
+    @Override
     public void addDough() {
         pizza.setDough("dough");
     }
 
+    @Override
     public void addCheese() {
         pizza.setCheese("cheese");
     }
 
+    @Override
     public void addMeat() {
-        pizza.setMeat(meat);
+        pizza.setMeat("bacon");
     }
 
+    @Override
     public String getPizza() {
         return pizza.getDough() + ", "
                 + pizza.getCheese() + ", "
