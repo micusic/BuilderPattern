@@ -1,8 +1,8 @@
-public class Pizza {
+public class PizzaMaker {
 
     private final String meat;
 
-    public Pizza(String meat) {
+    public PizzaMaker(String meat) {
         this.meat = meat;
     }
 
