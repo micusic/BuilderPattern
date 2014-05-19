@@ -5,11 +5,13 @@ import static org.junit.Assert.assertEquals;
 public class CustomerTest {
     @Test
     public void canEatChickenPizza() throws Exception {
-        assertEquals("I eat chicken, cheese, pizza.", new Customer().eatChickenPizza());
+        String meat = "chicken";
+        assertEquals("I eat " + meat + ", cheese, dough.", new Customer().eatPizzaWith(meat));
     }
 
     @Test
     public void canEatBaconPizza() throws Exception {
-        assertEquals("I eat bacon, cheese, pizza.", new Customer().eatBaconPizza());
+        String meat = "bacon";
+        assertEquals("I eat " + meat + ", cheese, dough.", new Customer().eatPizzaWith(meat));
     }
 }

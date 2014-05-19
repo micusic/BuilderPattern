@@ -1,10 +1,15 @@
 public class Customer {
 
-    public String eatChickenPizza() {
-        return "I eat chicken, cheese, pizza.";
+    public String eatPizzaWith(String meat) {
+        return "I eat " +
+                getPizzaWith(meat) +
+                ".";
     }
 
-    public String eatBaconPizza() {
-        return "I eat bacon, cheese, pizza.";
+    private String getPizzaWith(String meat) {
+        return meat +
+                ", cheese" +
+                ", dough";
     }
+
 }
