@@ -1,13 +1,10 @@
 public class Customer {
 
     public String eatPizzaWith(String meat) {
+        Pizzahut pizzahut = new Pizzahut();
         PizzaMaker pizzaMaker = new PizzaMaker(meat);
-        pizzaMaker.addDough();
-        pizzaMaker.addCheese();
-        pizzaMaker.addMeat();
-        return "I eat " +
-                pizzaMaker.getPizza() +
-                ".";
+        String pizza = pizzahut.getPizzaWith(pizzaMaker);
+        return "I eat " + pizza + ".";
     }
 
 }

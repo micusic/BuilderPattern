@@ -1,7 +1,7 @@
 public class Pizza {
-    private String dough;
-    private String cheese;
-    private String meat;
+    private String dough = "";
+    private String cheese = "";
+    private String meat = "";
 
     public void setMeat(String meat) {
         this.meat = meat;
